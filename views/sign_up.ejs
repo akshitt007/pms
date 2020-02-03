@@ -1,0 +1,16 @@
+<h1>Sign Up</h1>
+ <p> <% if(msg!=''){%>
+ <%= msg %>
+  <%} %>
+  </p>
+<form action="/signup" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <input type="submit" value="Sign Up">
+
+</form>
+
+<br><br><br>
+<p>Already have account<a href="/"> Login Page</a></p>
